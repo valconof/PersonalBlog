@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+ 
+{% block title %}Профиль{% endblock %}
+ 
+{% block content %}
+    <div class="profile_back_block"><div class="profile_a"><a href="{% url 'blog:index' %}">На главную</a></div><p>{{user.last_name}} {{user.first_name}}</p>
+    </div>
+        <div class="post_block">
+            <p class="post1">{{post.post_title}}</p>
+            <p>{{post.post_text}}</p>
+        </div>
+        {% for c in comments %}
+            <div class="view_comment_block">
+                <p>{{c.author_last_name}} {{c.author_first_name}}</p>
+                <p>{{c.comment_text}}</p>
+            </div>
+        {% endfor %}
+        {% if request.user.is_authenticated %}
+        <div class="view_leave_block">
+            <form action="{% url 'blog:leave_comment' user.id post.id %}" method="POST">
+                {% csrf_token %}
+                <div class="view_leave_head"><p>Оставьте комментарий</p></div>
+                <textarea class="view_leave_textarea" name="text" required="" placeholder="Текст ( не более 200 символов )"></textarea><br>
+                <div><button  class="view_leave_button" type="submit">Оставить ответ</button></div>
+            </form>
+        </div>
+        {% endif %}
+{% endblock %}

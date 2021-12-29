@@ -1,0 +1,377 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.background {
+	background-size: 2220px 1080px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+	position: fixed;
+ 	width: 100vw; 
+ 	height: 100vh;
+	background: #55A9E5;
+}
+.header {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 60px;
+	background: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.header_block {
+	width: 1200px;
+	height: 60px;
+	background: white;
+}
+.header_word_block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	height: 60px;
+}
+.header_word {
+	color: #232A30;
+	font-size: 40px;
+	font-weight: 600
+}
+.main {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+ 	width: 100vw; 
+ 	height: 100vh;
+}
+.main_block {
+	display: flex;
+	width: 1200px;
+	min-height: 2000px;
+	max-height: 100%;
+}
+.j1 {
+	margin: 0 10px;
+}
+.j2 {
+	margin: 0 10px;
+}
+.j3 {
+	margin: 0 10px;
+}
+.j4 {
+	margin: 0 10px;
+}
+.name_base {
+	color: #232A30;
+	font-size: 18px;
+	font-weight: 600
+}
+.name_base_create {
+	color: #232A30;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+}
+.name_base_profile {
+	color: #232A30;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+}
+.name_base_leave {
+	color: #232A30;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+}
+.m1 {
+	width: 250px;
+	height: 800px;
+	margin-top: 25px;
+	margin-right: 25px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.stats_im {
+	width: 40px;
+	height: 40px;
+	padding-right: 5px;
+	background-repeat: no-repeat;
+}
+.link_im {
+	width: 40px;
+	height: 40px;
+	padding-right: 5px;
+	background-repeat: no-repeat;
+}
+.person_im {
+	width: 40px;
+	height: 50px;
+	padding-right: 5px;
+	background-repeat: no-repeat;
+	left: 0;
+}
+.m1_zag_block {
+	width: 250px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 25px;
+	background: white;
+	border-radius: 5px;
+}
+.m1_zag_block p {
+	color: #232A30;
+	font-size: 18px;
+	font-weight: 600;
+}
+.m1_stat_block {
+	width: 250px;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.m1_stat_block p {
+	margin: 6px;
+	color: #232A30;
+	font-size: 14px;
+	font-weight: 600;
+}
+.m2 {
+	width: 650px;
+	height: 800px;
+	margin-top: 25px;
+}
+.m3_zag_block {
+	width: 250px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 25px;
+	background: white;
+	border-radius: 5px;
+}
+.m3_zag_block p {
+	color: #232A30;
+	font-size: 18px;
+	font-weight: 600;
+}
+.block_profile_view {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 650px;
+	height: 60px;
+	margin-bottom: 25px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.button_login {
+	margin-right: 100px;
+	text-decoration: none;
+	color: #232A30;
+	font-size: 18px;
+	font-weight: 600
+}
+.button_register {
+	text-decoration: none;
+	color: #232A30;
+	font-size: 18px;
+	font-weight: 600
+}
+.block_list {
+	width: 650px;
+	height: 715px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.m3 {
+	width: 250px;
+	height: 800px;
+	margin-top: 25px;
+	margin-left: 25px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.authorize_head {
+	width: 200px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.authorize_head h2 {
+	color: #232A30;
+	font-size: 25px;
+	font-weight: 600
+}
+.login_form_block form p {
+	margin: 4px auto;
+}
+.authorize_button {
+	width: 100px;
+	height: 20px;
+	margin: 5px auto;
+	cursor: pointer;
+	background: #232A30;
+	color:white;
+	font-size: 15px;
+	font-weight: 600;
+}
+.login_form_block {
+	width: 300px;
+	height: 130px;
+	margin-left: auto;
+	margin-right: auto; 
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	border: 2px solid #55A9E5;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.create_post_head {
+	width: 200px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.create_post_head h2 {
+	color: #232A30;
+	font-size: 25px;
+	font-weight: 600
+}
+.create_post_c_block form p {
+	margin: 4px auto;
+}
+.authorize_button {
+	width: 100px;
+	height: 20px;
+	margin: 5px auto;
+	cursor: pointer;
+	background: #232A30;
+	color:white;
+	font-size: 15px;
+	font-weight: 600;
+}
+.create_post_c_block {
+	width: 300px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto; 
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	border: 2px solid #55A9E5;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+input[type="text" i] {
+    padding: 1px 2px;
+    width: 190px;
+    border: 2px solid #55A9E5;
+}
+input[name="post_text" i] {
+    padding: 1px 2px;
+    width: 190px;
+    height: 100px;
+    margin-left: 31px;
+    border: 2px solid #55A9E5;
+}
+ul[class="errorlist"] {
+	display: none;
+}
+input[name="username"] {
+	width: 150px;
+	margin-left: 81px;
+	border: 2px solid #55A9E5;
+}
+input[name="password"] {
+	width: 154px;
+	margin-left: 74px;
+	border: 2px solid #55A9E5;
+}
+.registat_head {
+	width: 200px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.registat_head h2 {
+	color: #232A30;
+	font-size: 25px;
+	font-weight: 600
+}
+.registr_c_block {
+	width: 300px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto; 
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	border: 2px solid #55A9E5;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+}
+.inf_admin_block {
+	width: 250px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	padding: 4px;
+}
+.inf_admin_block p {
+	color: #232A30;
+	font-size: 15px;
+	font-weight: 600;
+}
+input[name="first_name"] {
+	width: 150px;
+	margin-top: 5px;
+	margin-left: 94px;
+	border: 2px solid #55A9E5;
+}
+input[name="last_name"] {
+	width: 150px;
+	margin-top: 5px;
+	margin-left: 60px;
+	border: 2px solid #55A9E5;
+}
+input[name="email"] {
+	width: 154px;
+	margin-top: 5px;
+	margin-left: 82px;
+	border: 2px solid #55A9E5;
+}
+input[name="password1"] {
+	width: 154px;
+	margin-top: 6px;
+	margin-left: 73px;
+	border: 2px solid #55A9E5;
+}
+input[name="password2"] {
+	width: 154px;
+	margin-top: 6px;
+	border: 2px solid #55A9E5;
+}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Личный Блог{% endblock %}
+ 
+{% block content %}
+	<div class="index_view_profile_block_top"><p>Список пользователей</p></div>
+    {% for a in all_users %}
+    	<div class="index_view_profile_block"><div class="person_im" style="background-image: url('{% static "person.png"%}')"></div><div class="index_view_profile_block_name"><a href="{% url 'blog:viewProfile' a.id %}" >{{a.last_name}} {{a.first_name}}</a></div></div>
+    {% endfor %}
+{% endblock %}

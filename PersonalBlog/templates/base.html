@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static "css/base.css" %}">
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
+    <link rel="stylesheet" href="{% static "css/profile.css" %}">
+    <link rel="stylesheet" href="{% static "css/viewPost.css" %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="background" style="background-image: url('{% static "background.jpg"%}')">
+        <div class="header">
+            <div class="header_block">
+                <div class="header_word_block">
+                    <span class="header_word">Личный Блог</span>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_block">
+                <div class="m1">
+                    <div class="m1_zag_block">
+                        <div class="stats_im" style="background-image: url('{% static "stats.png"%}')"></div>
+                        <p>Статистика</p>
+                    </div>
+                    <div class="m1_stat_block">
+                        {% if not request.user.is_authenticated %}
+                            <p>Вы должны быть авторизованы, чтобы видеть статистику!</p>
+                        {% endif %}
+                        {% if request.user.is_authenticated %}
+                        <div>
+                            <p>Кол-во ваших постов: {{all_posts}}</p>
+                            <p>Дата регистрации: <br> {{request.user.date_joined}}</p>
+                            <p>Почта: {{request.user.email}}</p>
+                        </div>
+                            
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="m2">
+                    <div class="block_profile_view">
+                        {% if not request.user.is_authenticated %}
+                            <a class="button_login" href="{% url 'blog:loginUser' %}">Войти</a>
+                            <a class="button_register" href="{% url 'blog:registrationUser' %}">Зарегистрироваться</a>
+                        {% endif %}
+                        {% if request.user.is_authenticated %}
+                            <div class="j1"><p class="name_base">{{request.user.last_name}} {{request.user.first_name}}</p></div>
+                            <div class="j2"><a class="name_base_create" href="{% url 'blog:createPost' %}">Создать пост</a></div>
+                            <div class="j3"><a class="name_base_profile" href="{% url 'blog:viewProfile' request.user.id %}">Профиль</a></div>
+                            <div class="j4"><a class="name_base_leave" href="{% url 'blog:logoutUser' %}">Выйти</a></div>
+                        {% endif %}
+                    </div>
+                    <div class="block_list">
+                        <main>
+                            {% block content %}{% endblock %}
+                        </main>
+                    </div>
+                </div>
+                <div class="m3">
+                    <div class="m3_zag_block">
+                        <div class="link_im" style="background-image: url('{% static "link.png"%}')"></div>
+                        <p>Информация</p>
+                    </div>
+                    {% for i in all_admin_inf %}
+                        <div class="inf_admin_block"><p>{{i.text_information}}</p></div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>      
+    </div>
+</body>
+</html>

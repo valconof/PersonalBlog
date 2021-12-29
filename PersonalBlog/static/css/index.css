@@ -1,0 +1,45 @@
+.index_view_profile_block_top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 650px;
+	height: 50px;
+}
+.index_view_profile_block_top {
+	color: #232A30;
+}
+.index_view_profile_block_name {
+	width: 580px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.index_view_profile_block_name p {
+	text-decoration: none;
+	color: #232A30;
+	font-size: 15px;
+	font-weight: 600;
+}
+.index_view_profile_block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 650px;
+	height: 60px;
+	margin: 10px 0;
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	-webkit-transition: all 0.3s ease;;
+  	-moz-transition: all 0.3s ease;;
+  	-o-transition: all 0.3s ease;;
+  	transition: all 0.3s ease;
+}
+.index_view_profile_block:hover {
+	background: #3878BD;
+}
+.index_view_profile_block a {
+	text-decoration: none;
+	color: #232A30;
+	font-size: 20px;
+	font-weight: 600;
+}
